@@ -1,4 +1,5 @@
 $(function() {
+  //もっと見るボタン
   $('.button-more').on('mouseover', function() {
     $(this).animate({
       opacity: 0.5,
@@ -11,5 +12,14 @@ $(function() {
       opacity: 1.0,
       marginLeft: 0
     }, 100);
+  });
+
+  //カルーセル
+  $('.carousel').slick({
+    autoplay: true,
+    dots: true,
+    infinite: true,
+    autoplaySpeed: 5000,
+    arrows: false,
   });
 });
